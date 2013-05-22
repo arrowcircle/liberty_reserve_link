@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["oleg.bovykin@gmail.com"]
   spec.description   = %q{Library for communicating with LibertyReserve API and SCI}
   spec.summary       = %q{Library for communicating with LibertyReserve API and SCI}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/arrowcircle/liberty_reserve_link"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
