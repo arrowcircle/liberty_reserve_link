@@ -30,7 +30,7 @@ class LibertyReserveLink::Sci
     options.reject {|k, v| !(ALLOWED_OPTIONS.include? k.to_s)}
   end
 
-  def payment_request_uri(amount, currency, order_id, item_name, options={})
+  def payment_uri(amount, currency, order_id, item_name, options={})
     endpoint = URI.parse ENDPOINT
     @query = {lr_acc: account, lr_store: name, lr_amnt: amount,
               lr_currency: currency, lr_merchant_ref: order_id,
